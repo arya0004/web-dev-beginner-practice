@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    THE JAVASCRIPT
+</head>
+<body>
+    <p> In this exmaple, <b>this</b> refers to the <b>person</b>object.</p>
+<p> Because<b>fullName</b> is a method of the prson object.</p>
+
+<p id="demo"></p>
+
+<script>
+const person= {
+
+    firstName: "Arya",
+    lastName: "Manve",
+    id: 5566,
+    fullName: function(){
+        return this.firstName+" "+this.lastName;
+    }
+};
+document.getElementById("demo").innerHTML=person.fullName();
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

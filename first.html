@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+ <body>
+<h2>  Creating an Object from a Json String </h2>
+<p id="demo"></p>
+<script>
+    const txt= '{"name": "John", "age": "function() {return 30;}" , "city": "New York", "birth": "2005-06-04"}';
+    const obj = JSON.parse(txt);
+    obj.birth= new Date(obj.birth);
+    obj.age = eval ("("+obj.age+")");
+    document.getElementById("demo").innerHTML = obj.name+ " , " + obj.age();
+ </script>
+</body>
+</html>
+<!-- 
++ " , " + obj.city + " , " +obj.birth; -->

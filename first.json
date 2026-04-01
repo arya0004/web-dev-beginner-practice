@@ -1,0 +1,7 @@
+myJson = {
+    "name": "Arya",
+    "Score": 100,
+    "isAdmin": false,
+    "license": null,
+    "shopItem": ["food", "clothes", "suncflower oil" ]
+};

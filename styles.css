@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.marquee {
+    text-align: center;
+    background-color: #ffddc1;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px; /* Increased max width for a wider form */
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px; /* Reduced padding to make the form more compact vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    height: auto; /* Allow the height to adjust based on content */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+label {
+    margin-bottom: 3px; /* Reduced margin between label and input */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input, select, button {
+    margin-bottom: 6px; /* Reduced margin between fields */
+    padding: 6px 8px; /* Smaller padding inside input/select fields */
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Ensure full-width inputs */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    padding: 8px 12px; /* Adjusted padding */
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px; /* Added some space above the button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    font-size: 0.85rem;
+    margin-top: 10px; /* Reduced margin */
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

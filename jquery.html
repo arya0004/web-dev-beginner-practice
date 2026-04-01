@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Verification</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #warning {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>How can you apply a style on an element using jQuery?</h3>
+    <b>Telephone Number Verification</b>
+    <br><br>
+    <input type="text" id="phone" placeholder="Enter the Phone No." />
+    <span id="warning"></span><br><br>
+    <button id="submit">Check</button>
+    
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                // Regular expression to check for an Indian phone number (10 digits, starting with 6-9)
+                const regexExp = /^[6-9]\d{9}$/;
+                const phone = $("#phone").val();
+                
+                if (!regexExp.test(phone)) {
+                    $("#warning").text("It's wrong, try again!").css("color", "red");
+                    $("#phone").css("background", "lightcoral");
+                } else {
+                    $("#warning").text("It's correct").css("color", "green");
+                    $("#phone").css("background", "lightgreen");
+                }
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Verification</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #warning {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>How can you apply a style on an element using jQuery?</h3>
+    <b>Telephone Number Verification</b>
+    <br><br>
+    <input type="text" id="phone" placeholder="Enter the Phone No." />
+    <span id="warning"></span><br><br>
+    <button id="submit">Check</button>
+    
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                // Regular expression to check for an Indian phone number (10 digits, starting with 6-9)
+                const regexExp = /^[6-9]\d{9}$/;
+                const phone = $("#phone").val();
+                
+                if (!regexExp.test(phone)) {
+                    $("#warning").text("It's wrong, try again!").css("color", "red");
+                    $("#phone").css("background", "lightcoral");
+                } else {
+                    $("#warning").text("It's correct").css("color", "green");
+                    $("#phone").css("background", "lightgreen");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
